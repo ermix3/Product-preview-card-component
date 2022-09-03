@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Product preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        DarkCyan: 'hsl(158, 36%, 37%)',
+                        Cream: 'hsl(30, 38%, 92%)',
+                        VeryDarkBlue: 'hsl(212, 21%, 14%)',
+                        DarkGrayishBlue: 'hsl(228, 12%, 48%)',
+                        White: 'hsl(0, 0%, 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container flex justify-center items-center">
+    <div class="card w-72 bg-White drop-shadow-lg my-12">
+        <div class="card__image">
+            <picture>
+                <source srcset="./images/image-product-mobile.jpg" media="(max-width: 375px)">
+                <source srcset="./images/image-product-desktop.jpg" media="(max-width: 1440px)">
+                <img src="./images/image-header-desktop.jpg" class="w-full">
+            </picture>
+        </div>
+        <div class="card__content">
+            <h2 class="card__title">Gabrielle Essence Eau De Parfum </h2>
+            <p class="card__description">
+                A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="card__price">
+                <span class="card__price--new">$169.99</span>
+                <span class="card__price--old">$149.99</span>
+            </div>
+            <button class="card__button ">Add to cart</button>
+        </div>
+    </div>
+</div>
+<footer class="attribution bg-yellow-500">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+</footer>
+</body>
+</html>
