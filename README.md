@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL : [solution](https://github.com/ermix3/Product-preview-card-component)
-- Live Site URL : [live site]()
+- Live Site URL : [live site](https://ermix3.github.io/Product-preview-card-component/)
 
 ## My process
 
